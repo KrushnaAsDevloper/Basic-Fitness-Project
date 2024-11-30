@@ -9,8 +9,13 @@ html , body{
     width: 100%;
     font-family: "Sriracha", cursive;
 }
+main{
+  
+  height: 100%;
+  width: 100%;
+}
 
-header{
+.landpage{
     height: 100%;
     width: 100%;
     font-family: "Sriracha", cursive;
@@ -51,7 +56,7 @@ nav ul li a {
     width: 100px;
 
 }
-header{
+.landpage{
     height: 100%;
     width: 100%;
     display: flex;
@@ -62,11 +67,11 @@ header{
     opacity: 0; /* Initially hidden */
     animation: fadeInZoomOut 2s ease-in-out forwards;
     animation-delay: 0.7s;
-    font-size: 5vw;
+    font-size: 2.5vw;
     color: #333;
     position: absolute; /* or fixed */
     top: 45%; /* 50% from the top of the viewport */
-    left: 40%; /* 50% from the left of the viewport */
+    left: 36%; /* 50% from the left of the viewport */
     transform: translate(-45%, -45%);
   }
 
