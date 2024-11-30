@@ -1,1 +1,1 @@
-#This is mini project to understand the basic concepts of the HTML,CSS & JS
+# This is mini project to understand the basic concepts of the HTML,CSS & JS
