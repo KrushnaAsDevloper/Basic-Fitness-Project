@@ -19,7 +19,7 @@ main{
     height: 100%;
     width: 100%;
     font-family: "Sriracha", cursive;
-    background: linear-gradient(50deg, #cbc5c5 50%, #fffb00 50%);
+    background: linear-gradient(50deg, #484d52 50%, #f3e932 50%);
 }
 nav{
     background-color: #0f0d197e;
@@ -68,7 +68,7 @@ nav ul li a {
     animation: fadeInZoomOut 2s ease-in-out forwards;
     animation-delay: 0.7s;
     font-size: 2.5vw;
-    color: #333;
+    color: rgb(164 122 99);
     position: absolute; /* or fixed */
     top: 45%; /* 50% from the top of the viewport */
     left: 36%; /* 50% from the left of the viewport */
@@ -104,3 +104,24 @@ nav ul li a {
     opacity: 1;
     visibility: visible;
   }
+.hero-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 165px;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+}
+
+.hero-content .hero-img img{
+  width: 31vw;
+}
+
+.hero-content .hero-headline h1{
+  font-size: 80px;
+  padding-left: 200px;
+  color: grey;
+}
