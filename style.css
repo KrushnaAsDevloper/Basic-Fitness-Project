@@ -61,7 +61,7 @@ header{
 .gym-name{
     opacity: 0; /* Initially hidden */
     animation: fadeInZoomOut 2s ease-in-out forwards;
-    animation-delay: 1s;
+    animation-delay: 0.7s;
     font-size: 5vw;
     color: #333;
     position: absolute; /* or fixed */
