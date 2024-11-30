@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: "Sriracha", cursive;
+}
+
+header{
+    height: 100%;
+    width: 100%;
+    font-family: "Sriracha", cursive;
+    background: linear-gradient(50deg, #cbc5c5 50%, #fffb00 50%);
+}
+nav{
+    background-color: #0f0d197e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    font-size: 20px;
+}
+
+.logo{
+    margin-left: 20px;
+}
+.logo img{
+    width: 100px;
+
+}
+header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gym-name{
+    opacity: 0; /* Initially hidden */
+    animation: fadeInZoomOut 2s ease-in-out forwards;
+    animation-delay: 1.5s;
+    font-size: 5vw;
+    color: #333;
+    position: absolute; /* or fixed */
+    top: 45%; /* 50% from the top of the viewport */
+    left: 40%; /* 50% from the left of the viewport */
+    transform: translate(-45%, -45%);
+  }
+
+  @keyframes fadeInZoomOut {
+    0% {
+      opacity: 0;
+      transform: scale(1); /* Smaller text */
+    }
+    50% {
+      opacity: 1;
+      transform: scale(3); /* Enlarged text */
+    }
+    75% {
+      opacity: 1;
+      transform: scale(3); /* Hold size */
+    }
+    100% {
+      opacity: 0;
+      transform: scale(3); /* Fade out while growing */
+    }
+  }
+
+  .hidden-content {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    visibility:hidden; 
+  }
+
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
