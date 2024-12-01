@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Sriracha&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,26 +11,16 @@ html , body{
     font-family: "Sriracha", cursive;
 }
 main{
-  
   height: 100%;
   width: 100%;
 }
 
-.landpage{
-    height: 100%;
-    width: 100%;
-    font-family: "Sriracha", cursive;
-    background: linear-gradient(50deg, #484d52 50%, #f3e932 50%);
-}
 nav{
-    background-color: #0f0d197e;
+    background-color:black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
-    z-index: 1;
-    position: fixed;
-    top: 0;
+    height: 10%;
     width: 100%;
     
     
@@ -50,47 +41,52 @@ nav ul li a {
 }
 
 .logo{
-    margin-left: 20px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 100px;
+  margin-left: 60px;
+  font-family: "Jaro", sans-serif;
+
+  
 }
-.logo img{
-    width: 100px;
+.logo span{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: whitesmoke;
 
 }
-.landpage{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gym-name{
-    opacity: 0; /* Initially hidden */
-    animation: fadeInZoomOut 2s ease-in-out forwards;
-    animation-delay: 0.7s;
-    font-size: 2.5vw;
-    color: rgb(164 122 99);
-    position: absolute; /* or fixed */
-    top: 45%; /* 50% from the top of the viewport */
-    left: 36%; /* 50% from the left of the viewport */
-    transform: translate(-45%, -45%);
-  }
 
-  @keyframes fadeInZoomOut {
+.logo .sks{
+  color: yellow;
+  line-height: 20px;
+
+}
+
+.logo .Fitness{
+  color: yellow ;  
+
+}
+.color{
+  color: yellow;
+}
+
+@keyframes fadeInZoomOut {
     0% {
       opacity: 0;
-      transform: scale(1); /* Smaller text */
+      transform: scale(1); 
     }
     50% {
       opacity: 1;
-      transform: scale(3); /* Enlarged text */
+      transform: scale(3); 
     }
     75% {
       opacity: 1;
-      transform: scale(3); /* Hold size */
+      transform: scale(3); 
     }
     100% {
       opacity: 0;
-      transform: scale(3); /* Fade out while growing */
+      transform: scale(3);
     }
   }
 
@@ -104,24 +100,68 @@ nav ul li a {
     opacity: 1;
     visibility: visible;
   }
-.hero-content{
+
+
+.landpage{
+    width: 100%;
+    height: 90%;
+    font-family: "Sriracha", cursive;
+    background: url(https://images.unsplash.com/photo-1623874106686-5be2b325c8f1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    
+}
+.overlay{
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.428);
+}
+.gym-name{
+  opacity: 0; 
+  animation: fadeInZoomOut 3s ease-in-out forwards;
+  animation-delay: 0.7s;
+  font-size: 2.5vw;
+  color: rgba(255, 255, 0, 0.858);
+  position: absolute; 
+  top: 50%; 
+  left: 37%;
+  transform: translate(-50%, -37%);
+  text-shadow: 2px 2px 20px white;
+}
+
+.hero{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 165px;
-  padding-left: 100px;
-  padding-right: 100px;
-  
+  width: 100%;
+  height: 100%;
+}
+.hero-img{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.hero-img img{
+  height: 85vh;
 }
 
-.hero-content .hero-img img{
-  width: 31vw;
+.hero-headline{
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  position: relative;
 }
 
-.hero-content .hero-headline h1{
-  font-size: 80px;
-  padding-left: 200px;
-  color: grey;
+.hero-headline h1{
+  font-size: 4.5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.876);
 }
