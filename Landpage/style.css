@@ -30,7 +30,6 @@ nav ul {
     display: flex;
     list-style: none;
     margin-right: 40px;
-    
 }
 
 nav ul li a {
@@ -50,6 +49,11 @@ nav ul button{
   font-family: "Sriracha", cursive;
   margin-left: 50px;
   color: rgba(0, 0, 0, 0.82);
+}
+
+nav .ham i{
+  visibility: hidden;  
+
 }
 .logo{
   display: flex;
@@ -114,8 +118,8 @@ nav ul button{
 
 
 .landpage{
-    width: 100%;
-    height: 90%;
+    width: 100vw;
+    height: 90% ;
     font-family: "Sriracha", cursive;
     background: url(https://images.unsplash.com/photo-1623874106686-5be2b325c8f1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
@@ -175,4 +179,40 @@ nav ul button{
   letter-spacing: 20px;
   text-transform: uppercase;
   text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.876);
+}
+
+@media (max-width:600px) {
+
+  nav .logo{
+    margin: 10px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav .ham i{
+    visibility: visible;
+    color: white;
+    font-size: 2.7rem;
+    position: relative;
+    right: 10px;
+  }
+  .landpage{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  .hero{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .hero-img img{
+    height: 60vh;
+  }
+  .hero-headline h1{ 
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+  }
+  
 }
