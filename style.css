@@ -37,9 +37,20 @@ nav ul li a {
     text-decoration: none;
     color: white;
     margin: 0px 20px;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
+nav ul button{
+  width: 7rem;
+  cursor: pointer;
+  background-color: yellow;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: "Sriracha", cursive;
+  margin-left: 50px;
+  color: rgba(0, 0, 0, 0.82);
+}
 .logo{
   display: flex;
   flex-direction:column;
