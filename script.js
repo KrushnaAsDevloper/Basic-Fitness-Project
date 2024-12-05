@@ -4,3 +4,6 @@ const animatedText = document.querySelector('.gym-name');
     animatedText.addEventListener('animationend', () => {
       hiddenContent.classList.add('visible');
     })
+
+  
+

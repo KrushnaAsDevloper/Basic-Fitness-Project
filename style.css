@@ -13,12 +13,14 @@ html , body{
 main{
   height: 100%;
   width: 100%;
+  position: relative;
+  
 }
 
 nav{
     background-color:black;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     height: 10%;
     width: 100%;
@@ -47,12 +49,17 @@ nav ul button{
   border-radius: 10px;
   font-size: 1.2rem;
   font-family: "Sriracha", cursive;
-  margin-left: 50px;
   color: rgba(0, 0, 0, 0.82);
 }
 
-nav .ham i{
-  visibility: hidden;  
+ .ham i{
+  visibility: hidden;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 50px ;
+  color: white;
+
 
 }
 .logo{
@@ -60,8 +67,10 @@ nav .ham i{
   flex-direction:column;
   align-items: center;
   width: 100px;
-  margin-left: 60px;
   font-family: "Jaro", sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 
   
 }
@@ -182,20 +191,46 @@ nav .ham i{
 }
 
 @media (max-width:600px) {
-
+  .sidebar{
+    transition: transform .4s ease-in;
+  }
+  .sidebarGo{
+    transform: translate(606px, 0);
+    position: absolute;
+  }
   nav .logo{
     margin: 10px;
   }
-  nav ul {
-    display: none;
+  nav{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.852);
+  }
+  nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
   }
 
-  nav .ham i{
+  nav ul li, button{
+    margin-top: 70px;
+  }
+
+  nav ul button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ham i{
     visibility: visible;
-    color: white;
-    font-size: 2.7rem;
-    position: relative;
-    right: 10px;
+    z-index: 11;
   }
   .landpage{
     height: 100vh;
@@ -208,10 +243,13 @@ nav .ham i{
     align-items:center;
   }
   .hero-img img{
-    height: 60vh;
+    display: none;
+  }
+  .hero-headline{
+    margin-top: 30vh;
   }
   .hero-headline h1{ 
-    font-size: 2.5rem;
+    font-size: 3.3rem;
     letter-spacing: 10px;
   }
   
