@@ -11,7 +11,7 @@
 
 
 <body>
-  <main>
+  <main id="home">
     <div class="logo">
       <span class="sks ">●SkS●</span>
       <span>Fit<span class="Fitness">N</span>ess</span>
@@ -19,11 +19,11 @@
     <nav class="sidebar sidebarGo">
 
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Services</a></li>
-        <li><a href="/">About Us</a></li>
-        <li><a href="#Contact">Contact Us</a></li>
-        <button class="join">Join Us!</button>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Categories">Categories</a></li>
+        <li><a href="/">Membership Plans</a></li>
+        <li><a href="/">Trainers</a></li>
+        <li><a href="#Contact"><button class="join">Join Us!</button></a></li>
       </ul>
     </nav>
     <div class="ham"><i class="ri-menu-fill"></i></div>
@@ -40,6 +40,9 @@
 
       </div>
     </div>
+    <section id="Categories" class="Categories"> 
+
+    </section>
     <section id="Contact" class="servicesSection">
       <form action="#" method="POST">
         <label for="name">Name</label>
@@ -55,6 +58,9 @@
       </form>
     </section>
   </main>
+  <a href="#home" class="up-arrow" title="Go to Home">
+    <i class="ri-arrow-up-fill"></i>
+</a>
   <script>
     
 const animatedText = document.querySelector('.gym-name');
@@ -67,7 +73,19 @@ animatedText.addEventListener('animationend', () => {
 const sidebar = document.querySelector(".ham").addEventListener("click",()=>{
 document.querySelector(".sidebar").classList.toggle("sidebarGo")
 })
+
+// Show/Hide the Up Arrow Button on Scroll
+window.onscroll = function() {
+    const upArrow = document.querySelector('.up-arrow');
+    if (window.scrollY > 200) {
+        upArrow.style.display = 'block';
+    } else {
+        upArrow.style.display = 'none';
+    }
+};
+
   </script>
+
 </body>
 
 </html>
