@@ -337,8 +337,8 @@ button:hover {
     transition: transform .4s ease-in;
   }
   .sidebarGo{
-    transform: translate(606px, 0);
-    position: absolute;
+      transform: translate(-606px, 0);
+      position: absolute;
   }
   nav .logo{
     margin: 10px;
