@@ -31,28 +31,31 @@
       <div class="overlay">
         <div class="gym-name">Welcome! To SkS Fitness</div>
         <div class="hidden-content hero" id="content">
-          <div class="hero-headline">
+          <div class="left">
             <h1>Transform Your <span class="color">Fitness,</span> Transform <span class="color">Your
                 Life!</span></h1> <!-- This is the name  -->
           </div>
-          <div class="hero-img"><img src="pngwing.com.png" alt=""></div> <!-- This is the img  -->
+          <div class="right"><img src="pngwing.com.png" alt=""></div> <!-- This is the img  -->
         </div>
 
       </div>
     </div>
+    <section class="servicesSection">
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+        <label for="message">Mention The Time</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </main>
-  <script>
-    const animatedText = document.querySelector('.gym-name');
-    const hiddenContent = document.getElementById('content');
-
-    animatedText.addEventListener('animationend', () => {
-      hiddenContent.classList.add('visible');
-    })
-
-    const sidebar = document.querySelector(".ham").addEventListener("click",()=>{
-  document.querySelector(".sidebar").classList.toggle("sidebarGo")
-})
-  </script>
+  <script src="/script.js"></script>
 </body>
 
 </html>

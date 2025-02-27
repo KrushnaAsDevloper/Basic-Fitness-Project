@@ -19,7 +19,7 @@ main{
 
 nav{
     background-color:black;
-    display: flex;
+    display: flex;  
     justify-content: flex-end;
     align-items: center;
     height: 10%;
@@ -127,8 +127,8 @@ nav ul button{
 
 
 .landpage{
-    width: 100vw;
-    height: 90% ;
+    width: 100%;
+    height: 100% ;
     font-family: "Sriracha", cursive;
     background: url(https://images.unsplash.com/photo-1623874106686-5be2b325c8f1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
@@ -154,31 +154,31 @@ nav ul button{
 }
 
 .hero{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero-img{
+.right{
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
 }
-.hero-img img{
-  height: 85vh;
+.right img{
+  height: 90%;
 }
 
-.hero-headline{
+.left{
   width: 50%;
   height: 100%;
   /* background-color: red; */
   position: relative;
 }
 
-.hero-headline h1{
+.left h1{
   font-size: 4.5vw;
   position: absolute;
   top: 50%;
@@ -189,6 +189,147 @@ nav ul button{
   text-transform: uppercase;
   text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.876);
 }
+
+/* services section starts */
+
+.servicesSection{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+  margin: auto;
+  background-color: rgba(250, 250, 250, 0.415);
+  width: 35vw;
+  padding:5%;
+  box-shadow: 2px 2px 12px rgb(95, 95, 95);
+  border-radius: 20px;
+
+}
+label {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: rgb(50, 50, 50);
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-family: "Sriracha", cursive;
+}
+button {
+  padding: 10px 15px;
+  background-color: #9dff00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #9dff00bb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:600px) {
   .sidebar{
@@ -242,13 +383,13 @@ nav ul button{
     flex-direction:column;
     align-items:center;
   }
-  .hero-img img{
+  .right img{
     display: none;
   }
-  .hero-headline{
+  .left{
     margin-top: 30vh;
   }
-  .hero-headline h1{ 
+  .left h1{ 
     font-size: 3.3rem;
     letter-spacing: 10px;
   }
