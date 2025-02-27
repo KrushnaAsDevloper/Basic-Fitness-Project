@@ -41,7 +41,19 @@
       </div>
     </div>
     <section id="Categories" class="Categories"> 
-
+      <h2>Categories</h2>
+      <div class="card weight">
+        <img src="/weight.jpg" alt="">
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero incidunt veniam culpa nostrum nemo velit est maxime error quis, expedita id dolorem, aspernatur odit perferendis voluptatibus at voluptatem officia iusto. Consequuntur, nulla!</div>
+      </div>
+      <div class="card cardio">
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero incidunt veniam culpa nostrum nemo velit est maxime error quis, expedita id dolorem, aspernatur odit perferendis voluptatibus at voluptatem officia iusto. Consequuntur, nulla!</div>
+        <img src="/cardio.webp" alt="">
+      </div>
+      <div class="card yoga">
+        <img src="/yoga.avif" alt="">
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero incidunt veniam culpa nostrum nemo velit est maxime error quis, expedita id dolorem, aspernatur odit perferendis voluptatibus at voluptatem officia iusto. Consequuntur, nulla!</div>
+      </div>
     </section>
     <section id="Contact" class="servicesSection">
       <form action="#" method="POST">
@@ -74,13 +86,12 @@ const sidebar = document.querySelector(".ham").addEventListener("click",()=>{
 document.querySelector(".sidebar").classList.toggle("sidebarGo")
 })
 
-// Show/Hide the Up Arrow Button on Scroll
 window.onscroll = function() {
     const upArrow = document.querySelector('.up-arrow');
     if (window.scrollY > 200) {
-        upArrow.style.display = 'block';
+        upArrow.classList.add('show');
     } else {
-        upArrow.style.display = 'none';
+        upArrow.classList.remove('show');
     }
 };
 
