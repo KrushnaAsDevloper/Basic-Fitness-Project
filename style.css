@@ -24,6 +24,7 @@ main {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   animation: gradientAnimation 10s infinite alternate;
 
 
@@ -283,62 +284,6 @@ nav ul button {
   margin: 0 20px;
 }
 
-/* .membership{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  min-height: 100vh;
-  background: url(https://t3.ftcdn.net/jpg/03/93/21/72/360_F_393217240_zfkRyEmOdzBx5VuSm36iNT1Jz36oZmpP.jpg) no-repeat;
-  background-size: cover;
-  border: 1px solid yellow;
-}
-.membership .mname{
-  display: flex;
-  justify-content: center;
-  align-items:flex-start;
-  width: 100%;
-  
-}
-.membership h2{
-  font-size: 3rem;
-  text-align: center;
-  color: white;
-}
-.mcardcontain{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-}
-.mcard{
-  height:70% ;
-  width: 50%;
-  margin: 0 40px;
-  background-color: rgba(165, 165, 165, 0.5);
-  border-radius: 40px;
-  padding: 60px;
-}
-
-.month1 h3{
-  font-size: 2.5rem;
-  color: white;
-  letter-spacing: 2px;
-  
-  line-height: 20px;
-}
-
-.month1 p{
-  color: white;
-  font-size: 20px;
-}
-
-.month1 .bignum{
-  font-size: 3rem;
-  color: white;
-} */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -408,67 +353,6 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 form {
   margin: auto;
   background-color: rgba(250, 250, 250, 0.415);
@@ -508,23 +392,6 @@ button {
 button:hover {
   background-color: #9dff00bb;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
