@@ -112,7 +112,7 @@
 
     <section id="Contact" class="contact">
       <h2>Contact Us</h2>
-      <form action="#" method="POST">
+      <form action="#" method="POST" onsubmit="return validateForm()">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
         
@@ -157,10 +157,18 @@ window.onscroll = function() {
     }
 };
 
-  let sub = document.querySelector(".submit")
-  sub.addEventListener('click', ()=>{
-    alert("Form Filled Successfully..!")
-  })
+
+  function validateForm() {
+        const nameInput = document.getElementById('name').value;
+        if (nameInput === '') {
+            alert('Please fill out the name field.');
+            return false; 
+        } else {
+            alert('Form submitted successfully!');
+            window.location.href = 'index.html'; 
+            return false; 
+        }
+    }
   </script>
 
 </body>
