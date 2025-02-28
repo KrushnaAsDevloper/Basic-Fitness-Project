@@ -19,15 +19,6 @@ main {
   height: 100%;
   width: 100%;
   position: relative;
-  background: radial-gradient(circle at 30% 50%, #9DFF00, #1a1a1a 30%, #0d0d0d 80%);
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  animation: gradientAnimation 10s infinite alternate;
-
-
 }
 
 
@@ -224,6 +215,7 @@ nav ul button {
   display: flex;
   justify-content: center;
   align-items: center;
+  background:linear-gradient(60deg , black 50%, #d1a000 50%);
 }
 
 .Categories {
@@ -235,6 +227,8 @@ nav ul button {
   align-items: center;
   flex-direction: column;
   color: white;
+  background-color: black;
+  background:linear-gradient(60deg , black 50%, #d1a000 50%);
 }
 
 .Categories h2 {
@@ -252,7 +246,7 @@ nav ul button {
 .card {
   margin: 20px 0;
   padding: 20px;
-  background-color: rgba(183, 183, 183, 0.342);
+  background-color: rgba(234, 234, 234, 0.317);
   border-radius: 20px;
 }
 
@@ -282,6 +276,7 @@ nav ul button {
 
 .card .desc {
   margin: 0 20px;
+  font-size: 1.3rem;
 }
 
 .container {
@@ -290,6 +285,8 @@ nav ul button {
   align-items: center;
   padding: 20px;
   min-height: 100%;
+  background-color: black;
+  background:linear-gradient(60deg , black 50%, #d1a000 50%);
 
 }
 
@@ -355,7 +352,7 @@ h1 {
 
 form {
   margin: auto;
-  background-color: rgba(250, 250, 250, 0.415);
+  background-color: rgba(250, 250, 250, 0.637);
   width: 35vw;
   padding: 5%;
   box-shadow: 2px 2px 12px rgb(95, 95, 95);
@@ -458,8 +455,8 @@ button:hover {
     margin: 0;
   }
 
-  nav ul li,
-  button {
+  nav ul li
+ {
     margin-top: 70px;
   }
 
