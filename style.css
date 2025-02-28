@@ -1,54 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Sriracha&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html , body{
-    height: 100%;
-    width: 100%;
-    font-family: "Sriracha", cursive;
-    scroll-behavior: smooth;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Sriracha", cursive;
+  scroll-behavior: smooth;
 }
-main{
+
+main {
   height: 100%;
   width: 100%;
   position: relative;
-  
+
 }
-hr{
+
+hr {
+  border: none;
   width: 95%;
   height: .5px;
-  background-color: rgba(255, 255, 255, 0.172);
+  background-color: rgba(255, 255, 255, 0.548);
 }
-nav{
-    background-color:black;
-    display: flex;  
-    justify-content: flex-end;
-    align-items: center;
-    height: 10%;
-    width: 100%;
-    
-    
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+
+
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 40px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    margin: 0px 20px;
-    font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  margin: 0px 20px;
+  font-size: 1.3rem;
 }
 
-nav ul button{
+nav ul button {
   width: 7rem;
   cursor: pointer;
   background-color: #9DFF00;
@@ -59,19 +66,20 @@ nav ul button{
   color: rgba(0, 0, 0, 0.82);
 }
 
- .ham i{
+.ham i {
   visibility: hidden;
   position: absolute;
   right: 10px;
   top: 10px;
-  font-size: 50px ;
+  font-size: 50px;
   color: white;
 
 
 }
-.logo{
+
+.logo {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   width: 100px;
   font-family: "Jaro", sans-serif;
@@ -79,113 +87,122 @@ nav ul button{
   top: 20px;
   left: 10px;
 
-  
+
 }
-.logo span{
+
+.logo span {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: whitesmoke;
 
 }
 
-.logo .sks{
+.logo .sks {
   color: #9DFF00;
   line-height: 20px;
 
 }
 
-.logo .Fitness{
-  color: #9DFF00 ;  
+.logo .Fitness {
+  color: #9DFF00;
 
 }
-.color{
+
+.color {
   color: #9DFF00;
 }
 
 @keyframes fadeInZoomOut {
-    0% {
-      opacity: 0;
-      transform: scale(1); 
-    }
-    50% {
-      opacity: 1;
-      transform: scale(3); 
-    }
-    75% {
-      opacity: 1;
-      transform: scale(3); 
-    }
-    100% {
-      opacity: 0;
-      transform: scale(3);
-    }
-  }
-
-  .hidden-content {
+  0% {
     opacity: 0;
-    transition: opacity 1s ease-in;
-    visibility:hidden; 
+    transform: scale(1);
   }
 
-  .visible {
+  50% {
     opacity: 1;
-    visibility: visible;
+    transform: scale(3);
   }
 
+  75% {
+    opacity: 1;
+    transform: scale(3);
+  }
 
-.landpage{
-    width: 100%;
-    height: 100% ;
-    font-family: "Sriracha", cursive;
-    background: url(https://images.unsplash.com/photo-1623874106686-5be2b325c8f1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
-    
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
 }
-.overlay{
+
+.hidden-content {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.landpage {
+  width: 100%;
+  height: 100%;
+  font-family: "Sriracha", cursive;
+  background: url(https://images.unsplash.com/photo-1623874106686-5be2b325c8f1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.428);
 }
-.gym-name{
-  opacity: 0; 
+
+.gym-name {
+  opacity: 0;
   animation: fadeInZoomOut 3s ease-in-out forwards;
   animation-delay: 0.7s;
   font-size: 2.5vw;
   color: #9DFF00;
-  position: absolute; 
-  top: 50%; 
+  position: absolute;
+  top: 50%;
   left: 37%;
   transform: translate(-50%, -37%);
   text-shadow: 2px 2px 20px white;
 }
 
-.hero{
+.hero {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.right{
+
+.right {
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
 }
-.right img{
+
+.right img {
   height: 90%;
 }
 
-.left{
+.left {
   width: 50%;
   height: 100%;
   /* background-color: red; */
   position: relative;
 }
 
-.left h1{
+.left h1 {
   font-size: 4.5vw;
   position: absolute;
   top: 50%;
@@ -199,62 +216,51 @@ nav ul button{
 
 /* services section starts */
 
-.contact{
+.contact {
   width: 100%;
   height: 100%;
-  
-  background: url('https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114152.jpg?t=st=1740749494~exp=1740753094~hmac=abff520aee326e21648da4811e645ec673eb4ea6631debdf22a8b4a8fc5b3fd2&w=1060') no-repeat;
+
+  background: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg?t=st=1740753498~exp=1740757098~hmac=e3ff6d8afad48a6c7d6c149baca1cae19d10beedc80eb925ffe235d300375c3b&w=996) no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.Categories{
+.Categories {
   width: 100%;
   min-height: 100%;
-  background: linear-gradient(45deg,whitesmoke, #9dff00b5,whitesmoke );
+  background: linear-gradient(45deg, whitesmoke, #9dff00b5, whitesmoke);
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
-  background: url('https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114152.jpg?t=st=1740749494~exp=1740753094~hmac=abff520aee326e21648da4811e645ec673eb4ea6631debdf22a8b4a8fc5b3fd2&w=1060') no-repeat;
+  background: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg?t=st=1740753498~exp=1740757098~hmac=e3ff6d8afad48a6c7d6c149baca1cae19d10beedc80eb925ffe235d300375c3b&w=996) no-repeat;
   background-size: cover;
 }
-.Categories h2{
+
+.Categories h2 {
   text-align: center;
   font-size: 5rem;
   color: #9DFF00;
   text-shadow: 2px 2px 10px whitesmoke;
 }
-.card >img{
+
+.card>img {
   width: 450px;
   border-radius: 40px;
 }
 
-.card{
-  margin: 20px 0 ;
+.card {
+  margin: 20px 0;
   padding: 20px;
   background-color: rgba(183, 183, 183, 0.342);
   border-radius: 20px;
 }
-.weight{
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.cardio{
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.yoga{
+
+.weight {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -262,19 +268,35 @@ nav ul button{
   flex-direction: row;
 }
 
-.card .desc{
+.cardio {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.yoga {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card .desc {
   margin: 0 20px;
 }
 
-.membership{
-  width: 100%;
-  min-height: 100%;
+/* .membership{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: column;
-  background: url('https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114152.jpg?t=st=1740749494~exp=1740753094~hmac=abff520aee326e21648da4811e645ec673eb4ea6631debdf22a8b4a8fc5b3fd2&w=1060') no-repeat;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg?t=st=1740753498~exp=1740757098~hmac=e3ff6d8afad48a6c7d6c149baca1cae19d10beedc80eb925ffe235d300375c3b&w=996) no-repeat;
   background-size: cover;
+  border: 1px solid yellow;
 }
 .membership .mname{
   display: flex;
@@ -289,11 +311,15 @@ nav ul button{
   color: white;
 }
 .mcardcontain{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
 }
 .mcard{
+  height:70% ;
   width: 50%;
-  height: 70%;
   margin: 0 40px;
   background-color: rgba(165, 165, 165, 0.5);
   border-radius: 40px;
@@ -316,8 +342,76 @@ nav ul button{
 .month1 .bignum{
   font-size: 3rem;
   color: white;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100%;
+  background: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg?t=st=1740753498~exp=1740757098~hmac=e3ff6d8afad48a6c7d6c149baca1cae19d10beedc80eb925ffe235d300375c3b&w=996) no-repeat;
+  background-size: cover;
+
 }
 
+/* Header Styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Cards Container */
+.mcards {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 80vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card Styles */
+.mcard {
+  background-color: rgba(197, 197, 197, 0.614);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 30%;
+  height: 70%;
+}
+
+.mcard h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #9DFF00;
+}
+
+.mcard p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+.mcard button {
+  padding: 20px 30px;
+  background-color: #9DFF00;
+  color: rgb(139, 139, 139);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 20px;
+}
+
+.mcard button:hover {
+  background-color: #9dff007a;
+}
 
 
 
@@ -386,17 +480,20 @@ form {
   margin: auto;
   background-color: rgba(250, 250, 250, 0.415);
   width: 35vw;
-  padding:5%;
+  padding: 5%;
   box-shadow: 2px 2px 12px rgb(95, 95, 95);
   border-radius: 20px;
 
 }
+
 label {
   margin-bottom: 5px;
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
 }
-input, textarea {
+
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -405,6 +502,7 @@ input, textarea {
   font-size: 1rem;
   font-family: "Sriracha", cursive;
 }
+
 button {
   padding: 10px 15px;
   background-color: #9dff00;
@@ -413,6 +511,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #9dff00bb;
 }
@@ -449,7 +548,8 @@ button:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #5bff32c5; /* Button Color */
+  background-color: #5bff32c5;
+  /* Button Color */
   color: white;
   padding: 3px 15px;
   border-radius: 50%;
@@ -460,22 +560,27 @@ button:hover {
   transition: all .5s;
   z-index: 1000;
 }
+
 .up-arrow:hover {
   background-color: #31e619;
   transform: scale(1.1);
 }
+
 @media (max-width:600px) {
-  .sidebar{
+  .sidebar {
     transition: transform .4s ease-in;
   }
-  .sidebarGo{
-      transform: translate(-606px, 0);
-      position: absolute;
+
+  .sidebarGo {
+    transform: translate(-606px, 0);
+    position: absolute;
   }
-  nav .logo{
+
+  nav .logo {
     margin: 10px;
   }
-  nav{
+
+  nav {
     position: absolute;
     z-index: 10;
     display: flex;
@@ -484,7 +589,8 @@ button:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.852);
   }
-  nav ul{
+
+  nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -492,54 +598,71 @@ button:hover {
     margin: 0;
   }
 
-  nav ul li, button{
+  nav ul li,
+  button {
     margin-top: 70px;
   }
 
-  nav ul button{
+  nav ul button {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .ham i{
+  .ham i {
     visibility: visible;
     z-index: 11;
   }
-  .landpage{
+
+  .landpage {
     height: 100vh;
     width: 100vw;
     background-size: cover;
   }
-  .hero{
+
+  .hero {
     display: flex;
-    flex-direction:column;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
   }
-  .right img{
+
+  .right img {
     display: none;
   }
-  .left{
+
+  .left {
     margin-top: 30vh;
   }
-  .left h1{ 
+
+  .left h1 {
     font-size: 3.3rem;
     letter-spacing: 10px;
   }
-  form{
+
+  form {
     width: 80vw;
   }
-  .card{
+
+  .card {
     flex-direction: column;
   }
-  .card > img{
+
+  .card>img {
     width: 70vw;
   }
-  .cardio{
+
+  .cardio {
     display: flex;
     flex-direction: column-reverse;
   }
-  .mcardcontain{
-    flex-direction: column;
+
+  .mcards {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+
+  .mcard {
+    max-width: 90%;
   }
 }
