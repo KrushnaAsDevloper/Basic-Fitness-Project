@@ -19,15 +19,16 @@ main {
   height: 100%;
   width: 100%;
   position: relative;
+  background: radial-gradient(circle at 30% 50%, #9DFF00, #1a1a1a 30%, #0d0d0d 80%);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  animation: gradientAnimation 10s infinite alternate;
+
 
 }
 
-hr {
-  border: none;
-  width: 95%;
-  height: .5px;
-  background-color: rgba(255, 255, 255, 0.548);
-}
 
 nav {
   background-color: black;
@@ -219,9 +220,6 @@ nav ul button {
 .contact {
   width: 100%;
   height: 100%;
-
-  background: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg?t=st=1740753498~exp=1740757098~hmac=e3ff6d8afad48a6c7d6c149baca1cae19d10beedc80eb925ffe235d300375c3b&w=996) no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,15 +228,12 @@ nav ul button {
 .Categories {
   width: 100%;
   min-height: 100%;
-  background: linear-gradient(45deg, whitesmoke, #9dff00b5, whitesmoke);
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
-  background: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg?t=st=1740753498~exp=1740757098~hmac=e3ff6d8afad48a6c7d6c149baca1cae19d10beedc80eb925ffe235d300375c3b&w=996) no-repeat;
-  background-size: cover;
 }
 
 .Categories h2 {
@@ -294,7 +289,7 @@ nav ul button {
   align-items: center;
   padding: 20px;
   min-height: 100vh;
-  background: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg?t=st=1740753498~exp=1740757098~hmac=e3ff6d8afad48a6c7d6c149baca1cae19d10beedc80eb925ffe235d300375c3b&w=996) no-repeat;
+  background: url(https://t3.ftcdn.net/jpg/03/93/21/72/360_F_393217240_zfkRyEmOdzBx5VuSm36iNT1Jz36oZmpP.jpg) no-repeat;
   background-size: cover;
   border: 1px solid yellow;
 }
@@ -350,8 +345,6 @@ nav ul button {
   align-items: center;
   padding: 20px;
   min-height: 100%;
-  background: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg?t=st=1740753498~exp=1740757098~hmac=e3ff6d8afad48a6c7d6c149baca1cae19d10beedc80eb925ffe235d300375c3b&w=996) no-repeat;
-  background-size: cover;
 
 }
 
