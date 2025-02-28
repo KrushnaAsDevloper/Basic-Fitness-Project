@@ -111,6 +111,7 @@
   </section>
 
     <section id="Contact" class="contact">
+      <h2>Contact Us</h2>
       <form action="#" method="POST">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -121,13 +122,19 @@
         <label for="message">Mention The Time</label>
         <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
         
-        <button type="submit">Submit</button>
+        <button type="submit" class="submit">Submit</button>
       </form>
     </section>
   </main>
   <a href="#home" class="up-arrow" title="Go to Home">
     <i class="ri-arrow-up-fill"></i>
 </a>
+
+  <footer class="footer">
+    <p>&copy; 2024 SkS Fitness. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+
+  </footer>
+
   <script>
     
 const animatedText = document.querySelector('.gym-name');
@@ -150,6 +157,10 @@ window.onscroll = function() {
     }
 };
 
+  let sub = document.querySelector(".submit")
+  sub.addEventListener('click', ()=>{
+    alert("Form Filled Successfully..!")
+  })
   </script>
 
 </body>

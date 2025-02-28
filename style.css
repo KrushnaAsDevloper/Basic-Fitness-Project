@@ -215,9 +215,14 @@ nav ul button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background:linear-gradient(60deg , black 50%, #31e619 50%);
 }
 
+.contact h2{
+  font-size: 4rem;
+  color: white;
+}
 .Categories {
   width: 100%;
   min-height: 100%;
@@ -234,7 +239,7 @@ nav ul button {
 .Categories h2 {
   text-align: center;
   font-size: 6rem;
-  color: #9DFF00;
+  color: white;
   letter-spacing: 10px;
 }
 
@@ -301,7 +306,7 @@ nav ul button {
 h1 {
   font-size: 4.5rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: white;
 }
 
 /* Cards Container */
@@ -321,7 +326,7 @@ h1 {
   background-color: rgba(9, 9, 9, 0.614);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 12px rgb(95, 95, 95);
   text-align: center;
   flex: 1 1 300px;
   max-width: 30%;
@@ -430,6 +435,27 @@ button:hover {
   transform: scale(1.1);
 }
 
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #fff;
+}
+
 @media (max-width:600px) {
   .sidebar {
     transition: transform .4s ease-in;
@@ -531,7 +557,6 @@ button:hover {
   }
   h1{
     font-size: 3rem;
-    color: #9dff00;
     text-align: center;
   }
   .Categories h2{
