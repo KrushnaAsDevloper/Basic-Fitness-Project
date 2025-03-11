@@ -112,7 +112,8 @@
 
     <section id="Contact" class="contact">
       <h2>Contact Us</h2>
-      <form action="#" method="POST" onsubmit="return validateForm()">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="92944866-90d0-42d0-b331-3e39fc6eebbb">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
         
@@ -157,18 +158,6 @@ window.onscroll = function() {
     }
 };
 
-
-  function validateForm() {
-        const nameInput = document.getElementById('name').value;
-        if (nameInput === '') {
-            alert('Please fill out the name field.');
-            return false; 
-        } else {
-            alert('Form submitted successfully!');
-            window.location.href = 'index.html'; 
-            return false; 
-        }
-    }
   </script>
 
 </body>
